@@ -3,11 +3,11 @@
 <!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
 <!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
 <!--[if (gt IE 7)|!(IE)]><!-->
-<html lang="en-us"><!--<![endif]-->
+<html lang="es"><!--<![endif]-->
 <head> 
 	<meta charset="utf-8">
 	
-	<title>web.geoffdeep.pw/ |POS MODERNO Documentacion</title>
+	<title>|POS MODERNO Documentacion</title>
 	
 	<meta name="description" content="Hi there, thank you for purchasing this software. If you have any questions that are beyond the scope of this documentation, please feel free to contact me via the comment section or email me at &#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109; Thanks.">
 	<meta name="author" content="Najmul Hossain & MD Tajmul">
@@ -230,12 +230,12 @@
 					ADMINISTRACION ARCHIVOS
 				</a>
 			</li>
-			<li class="page-scroll">
+			<!--<li class="page-scroll">
 				<a href="#setting">
 					<i class="fa fa-cog margin"></i>
 					CONFIGURACION
 				</a>
-			</li>
+			</li>-->
 			<li class="page-scroll">
 				<a href="#other">
 					<i class="fa fa-paper-plane margin"></i>
@@ -251,7 +251,7 @@
 
 		</ol>
 		<div id="documenter_copyright">
-		VISITA <a href="https://geoffdeep.pw/">MAS SISTEMAS AQUI</a> 
+		VISITA<a href="https://geoffdevops.com/"> MAS SISTEMAS AQUI</a> 
 		</div>
 	</div>
 	<div id="documenter_content">
@@ -262,7 +262,7 @@
 
 <section id="overview">
 	<h1 style="font-size:35px"> POS Moderno -punto de venta y administracion de stock</h1>
-	<h4>GRACIAS POR TU COMPA 😎</h4>
+	<center><h4 style="">BIENVENIDO🎉✨😎</h4></center>
 	<!--<p>PRIMERO TIENES CREAR TU BASE DE DATOS EN TU SERVIDOR DE BASE DE DATOS phpmyadmin <span style="background-color: yellow">crea la bd con el nombre que prefieras</span></p>
 	<h3>Una vez creada la bd Importar la base de datos de la carpeta base de datos</h3>
 		<p>► Antes de ese recuerda que tienes que copiar el sistema a tu servidor</p>-->
@@ -347,7 +347,18 @@
 
 <!-- POS part start -->
 <section id="point">
-	<h1>Punto de venta</h1> 
+	<h1>Punto de venta</h1>
+	<h3>Vistas del POS</h3>
+		<ul>
+			<li>Interfaz de usuario
+				<center><img src="assets/images/pos.png"></center>
+			</li>
+		</ul>
+		<!--<ul>
+			<li>Panel derecho
+				<center><img src="assets/images/pos-derecho.png"></center>
+			</li>
+		</ul>-->
 	<h3>Pasos para generar una venta</h3><hr class="notop">
 	<ul>
 		<li> Dashboard > ir al punto de venta desde el menú vertical (img 1) o el menú de la barra superior (img2).</li>
@@ -374,64 +385,154 @@
 		</div> 
 		<li> Puedes usar un escáner de código de barras (configuraciones de lector de codigo [CÓDIGO-128, CÓDIGO-93 Y CÓDIGO-39]). Después de completar un escaneo, se agregará un (1) producto a la venta.</li>
 		<li> Puedes escanear varias veces para agregar más cantidad del mismo producto</li>
-		<li> Puedes otorgar diferentes cantidades de descuento para los diferentes usuarios. (img5)</li>
-		<div class="container">
-			<div class="item5">
-				<img src="assets/images/img5.png" alt="">
-			</div>
-		</div>
+		<li> Puedes otorgar diferentes cantidades de descuento para los diferentes usuarios. (img5)
+			<center><img src="assets/images/img5.png" alt=""></center>
+		</li>
 		<li> Puedes agregar costo de impuesto y costo de envio manualmente.</li>
-		<li> Después de seleccionar el producto, el descuento y los impuestos, haz clik en el botón Pagar ahora</li>
-		<li> Entonces podrás ver la vista previa de la factura. Luego completa el monto recibido y presione
- <kbd>Enter</kbd>.</li>
-		<li> Selecciona en un método de pago para generar la factura del cliente.</li>
-		<li> Producto vendido con éxito </li>
-		<li> Se generará una factura y podrá imprimir facilmente.</li>
-		<li> Podras usar la impresora POS</li>
-<h3>Vistas del POS</h3>
-		<ul>
-			<li>Panel izquierdo</li>
-		</ul>
-		<div class="container">
-			<div class="item6">
-				<img src="assets/images/pos-izquierdo.png">
-			</div>
-		</div>
-		<ul>
-			<li>Panel derecho</li>
-		</ul>
-		<div class="container">
-			<div class="item7">
-				<img src="assets/images/pos-derecho.png">
-			</div>
-		</div>
-	</ul>
+		<li> Después de seleccionar el producto, el descuento y los impuestos, haz clik en el botón <kbd>PAGAR</kbd></li>
+		<li> Detalle de pago, aca podra elegir el metodo de pago recibido (Pago en efectivo, pago contra entrega, venta al credito o vender a plazos). Si le pago no requiere cambio click en boton <kbd>PAGO COMPLETO</kbd>,
+			si el pago requiere cambio, colocar cantidad recibisa en el campo <kbd>MONTO PAGO</kbd>, luego click en boton <kbd>CHECKUOT</kbd>.
+			<img src="assets/images/p1.png" alt="">
+        </li>
+		<li> Se generará una factura y podrá imprimir,enviar por coree o mensaje de texto.
+			<center><img src="assets/images/rec1.png" alt=""></center>
+		</li>
+
 </section>
 <!-- POS part end -->
 
 <!-- invoice part start -->
 <section id="invoice">
-	<h1>Ventas</h1> 
-	<h3>Lista de venta (lista de facturas)</h3><hr class="notop">
-	<p>En esta sección, podrás ver todas las ventas generadas en la tienda. Además, si deseas ver las factura de otro día, puedes verlas fácilmente filtrando la lista de facturas. Para filtrar la fecha, haga clic en el icono de búsqueda en la barra de menú superior</p>
+	<h1>Modulo de ventas</h1> 
+	<h3>Lista de venta</h3><hr class="notop">
+	<p>En esta sección podra ver todas las ventas generadas en la tienda, además podra filtrar esta lista por fechas, clientes y estado de venta(FACTURA DEVIDA, FACTURA PAGADA,FACTURA INACTIVA).
+		<center><img src="assets/images/listven.png" alt=""></center>
+	</p>
 	<ul>
-		<li> Aquí podrás ver la lista de facturas de la tienda actual.</li>
-		<li> Podrás ver los detalles de la factura desde aquí</li>
-		<li> Podrás devolver el producto de la factura de venta</li>
-		<li> Podrás eliminar la factura desde aquí</li>
-		<li> Puedes imprimir la factura a través de la impresora POS.</li> 
+		<li>Ventas por fecha <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+			<path d="M21 21l-6 -6" />
+		  </svg></li>
+		<li>Filtro por cliente <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+			<path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+			<path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+			<path d="M17 10h2a2 2 0 0 1 2 2v1" />
+			<path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+			<path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+		  </svg></li>
+		<li>Generar retorno <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+		  </svg></li>
+		<li>Vista de factura <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+			<path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+		  </svg></li>
+		<li>Editar <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+			<path d="M13.5 6.5l4 4" />
+		  </svg></li>
+		<li>Eliminar <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M4 7l16 0" />
+			<path d="M10 11l0 6" />
+			<path d="M14 11l0 6" />
+			<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+			<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+		  </svg></li>
+		  <li>Imprimir reporte <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
+			<path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
+			<path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" />
+		  </svg></li>
+		  <li>Exportar reporte <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table-export" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M12.5 21h-7.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+			<path d="M3 10h18" />
+			<path d="M10 3v18" />
+			<path d="M16 19h6" />
+			<path d="M19 16l3 3l-3 3" />
+		  </svg></li>
+		  <li>Envio de reporte por mail<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+			<path d="M3 7l9 6l9 -6" />
+		  </svg></li>
 	</ul>
 
 	<h3>Lista de devoluciones</h3><hr class="notop">
+	<p>En esta sección tendra listadas todas las ventas retornadas, a sí mismo podra visaulizar el detalle del retorno, Fecha y hora, Id de factura, No. de referencia, cliente,
+		nota, total de producto, monto de venta, lista de producto por nombre, cantidad y precio.<center><img src="assets/images/listdevu.png" alt=""></center></p>
 	<ul>
-		<li> Aquí obtendrá la lista de devolución de facturas.</li>
-		<li> Nombre del producto devuelto con cantidad devuelta.</li>
+		<li>Retorno por fecha <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+			<path d="M21 21l-6 -6" />
+		  </svg></li>
+		  <li>Vista de retorno <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+			<path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+		  </svg></li>
+		  <li>Imprimir reporte <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
+			<path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
+			<path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" />
+		  </svg></li>
+		  <li>Exportar reporte <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table-export" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M12.5 21h-7.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+			<path d="M3 10h18" />
+			<path d="M10 3v18" />
+			<path d="M16 19h6" />
+			<path d="M19 16l3 3l-3 3" />
+		  </svg></li>
+		  <li>Envio de reporte por mail<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+			<path d="M3 7l9 6l9 -6" />
+		  </svg></li>
 	</ul>
 
 	<h3>Registro de venta</h3><hr class="notop">
+	<P>Aquí obtendrá el registro de ventas por tipo, cantidad nombre de cliente, tipo de pago, usuario que genero la venta, cantidad de venta y podra ver el detalle de venta. <center><img src="assets/images/regven.png" alt=""></center></P>
 	<ul>
-		<li>Aquí obtendrá todo el registro de la factura de venta.</li>
-		<li> Nombre del producto devuelto con cantidad devuelta.</li>
+		<li>Venta por fecha <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+			<path d="M21 21l-6 -6" />
+		  </svg></li>
+		  <li>Detalle de venta <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+			<path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+		  </svg></li>
+		  <li>Imprimir reporte <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
+			<path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
+			<path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" />
+		  </svg></li>
+		  <li>Exportar reporte <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table-export" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M12.5 21h-7.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+			<path d="M3 10h18" />
+			<path d="M10 3v18" />
+			<path d="M16 19h6" />
+			<path d="M19 16l3 3l-3 3" />
+		  </svg></li>
+		  <li>Envio de reporte por mail<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+			<path d="M3 7l9 6l9 -6" />
+		  </svg></li>
 	</ul>
 
 </section>
